@@ -8,11 +8,31 @@ html {
 
 body {
   margin: 0;
+  background-image: url(images/background.jpg);
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.imagepresentation {
+  display: flex;
+  justify-content: center;
+}
+#presentationentreprise{
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+}
+#soustitrepresentation{
+  font-weight: bold;
+}
+.titrepresentation {
+  display: flex;
+  justify-content: center;
+  font-family: 'Potta One', cursive;
+}
+
 
 .site-wrap {
   max-width: 700px;
@@ -28,7 +48,7 @@ body {
 header {
   text-align: center;
   height: 100vh;
-  background: url(images/imageHeader.jpeg) bottom center no-repeat;
+  background: url(images/imageHeader.jpg) bottom center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -38,7 +58,7 @@ header {
 h1 {
   color: white;
   font-size: 7vw;
-  text-shadow: 3px 4px 0 rgba(0,0,0,0.2);
+  text-shadow: 6px 8px 0 rgba(0,0,0,0.2);
 }
 
 nav {
