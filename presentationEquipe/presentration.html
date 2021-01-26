@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="presentation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <title>Presentation de l'équipe AC</title>
+</head>
+
+<body>
+    <h1>Présentation de l'équipe</h1>
+    <nav id="main">
+        <ul>
+            <li class="logo"><a href="#">Amelia</a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">A Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="presentations">
+        <section class="fil-discrbption">
+            <img id="photo" src="avatar1.jpeg" alt=" photo filmon seare ">
+            <div class="discription">
+                <h3 class="presentations">Fondateur & CEO</h3>
+                <h4>Filmon Seare</h4>
+                <p>Fondateur & CEO de la 1ère marketplace B2B dédiée aux professionnels de la mode,
+                    dont la mission est de redonner de la compétitivité aux détaillants multi-marques
+                    en mettant à leur disposition des outils digitaux dignes des grandes enseignes et du
+                    e-commerce.</p>
+            </div>
+        </section>
+        <section class="antoin-dicription">
+            <img id="photo" src="avatar1.jpeg" alt=" that photo">
+            <div class="discription">
+                <h3 class="presentations">Responsable des Grands comptes</h3>
+                <h4>Antoine Gayoso</h4>
+                <p>Garantir un service client de qualité, pour nos partenaires B2B en France et à l'étranger.
+
+                    Répondre aux attentes des clients dans les meilleurs délais et toujours leur donner une réponse
+                    adaptée à leurs différentes problématiques. </p>
+            </div>
+        </section>
+        <section class="samira-disription">
+            <img id="photo" src="avatar1.jpeg" alt=" that photo">
+            <div class="discription">
+                <h3 class="presentation">Responsable styliste Photo</h3>
+                <h4>Samira Houacine</h4>
+                <p>Organisation quotidienne des shootings photos : Booker les mannequins, créer des looks, accessoiriser
+                    avec des bijoux et maroquinerie. Sélectionner et mettre en valeur les produits pour offrir la
+                    meilleure expérience d'achat aux clients.</p>
+            </div>
+    </div>
+    </section>
+    <footer>
+        <div class="mainfoot">
+            <div class="icons">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="liensutiles">
+                <h3 id="shopfooter">Shop</h3>
+                <ul>
+                    <li><a href="presentation.html#femme">Femme</a></li>
+                    <li><a href="presentation.html#homme">Homme</a></li>
+                    <li><a href="presentation.html#solde">Soldes</a></li>
+                </ul>
+            </div>
+            <div class="liensutiles">
+                <h3 id="shopfooter">Service client</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Retours</a></li>
+                    <li><a href="#">Suivi de commande</a></li>
+                </ul>
+            </div>
+            <div class="liensutiles">
+                <h3 id="liensutilesfooter">Liens utiles</h3>
+                <ul>
+                    <li><a href="presentation.html#equipelien">L'équipe</a></li>
+                    <li><a href="presentation.html#entrepriselien">L'entreprise</a></li>
+                    <li><a href="presentation.html#contactlien">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="text">
+                <p class="copyright">Amelia Collection © 2020</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+<script>
+    const nav = document.querySelector("#main");
+    const topOfNav = nav.offsetTop;
+
+    function fixedNav() {
+        console.log(window.scrollY, topOfNav);
+        if (topOfNav <= window.scrollY) {
+            document.body.style.paddingTop = '77px';
+            nav.classList.add("fixedNav");
+        }
+        else {
+            document.body.style.paddingTop = 0;
+            nav.classList.remove("fixedNav");
+        }
+    }
+    addEventListener("scroll", fixedNav)
+</script>
+
+</html>
